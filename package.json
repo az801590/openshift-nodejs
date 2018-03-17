@@ -1,0 +1,19 @@
+{
+  "name": "openshift-nodejs",
+  "version": "1.0.0",
+  "description": "Openshift nodejs file",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/az801590/openshift-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/az801590/openshift-nodejs/issues"
+  },
+  "homepage": "https://github.com/az801590/openshift-nodejs#readme"
+}
