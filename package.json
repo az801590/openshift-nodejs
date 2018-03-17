@@ -4,7 +4,7 @@
   "description": "Openshift nodejs file",
   "main": "server.js",
   "scripts": {
-    "start": "server server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
