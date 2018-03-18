@@ -4,6 +4,9 @@ const jieba=require("nodejieba");
 
 var app=express();
 
+var port=process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var ip=process.env.IP || process.env.OPENSHIFT_NODEJS_IP || "0.0.0.0";
+
 //body-parser application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded(
 	{
@@ -19,7 +22,7 @@ app.use(express.static(__dirname+"/public"));
 
 
 //set port
-app.listen(8888, function()
+app.listen(port, ip, function()
 	{
 		console.log("Start");
 	}
