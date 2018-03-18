@@ -23,9 +23,9 @@ app.use(express.static(__dirname+"/public"));
 
 
 //set port
-app.listen(8080);
+//app.listen(8080);
 
-//http.createServer(app).listen(port, ip);
+http.createServer(app).listen(8080, "0.0.0.0");
 
 //set nodejieba
 jieba.load(
