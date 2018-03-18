@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script src="speech.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	</head>
+	<body>
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="col align-self-center">
+					<h1 class="text-center">Web Speech API</h1>
+
+					<div class="border rounded mt-5 mb-5 p-1 h-25" id="result">
+					</div>
+					
+					<div class="row justify-content-center">
+						<div class="row btn-circle btn-mic text-center align-items-center" onclick="micButton()" id="mic">
+							<i class="col fas fa-microphone"></i>
+						</div>
+					</div>
+				</div>
+				<div class="align-self-end w-100 text-center h5">
+					<div id="lastSent"></div>
+					<form action="/jieba" method="post">
+						<input type="hidden" name="string" id="postVal">
+						<button class="btn" type="submit">Jieba</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
