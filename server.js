@@ -22,11 +22,7 @@ app.use(express.static(__dirname+"/public"));
 
 
 //set port
-app.listen(port, ip, function()
-	{
-		console.log("Start");
-	}
-);
+app.listen(port, ip);
 
 //set nodejieba
 jieba.load(
