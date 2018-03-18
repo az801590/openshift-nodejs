@@ -1,3 +1,4 @@
+const http=require("http");
 const express=require("express");
 const bodyParser=require("body-parser");
 const jieba=require("nodejieba");
@@ -22,7 +23,9 @@ app.use(express.static(__dirname+"/public"));
 
 
 //set port
-app.listen(port, ip);
+//app.listen(port);
+
+http.createServer(app).listen(port, ip);
 
 //set nodejieba
 jieba.load(
