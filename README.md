@@ -1,2 +1,2 @@
-##Speech to Text##
+## Speech to Text ##
 Working on OpenShift
