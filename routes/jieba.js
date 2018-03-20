@@ -1,11 +1,18 @@
 const express=require("express");
-const jieba=require(__dirname+"/../jieba/init")
+const jieba=require(__dirname+"/../jieba/jie");
 const router=express.Router();
 
-router.post("/", function(req, res)
+router.post("/", async function(req, res)
 	{
-		let result=jieba.tag(req.body.string);
-		res.send(result);
+		try
+		{
+			let result=await jieba.Tag(req.body.string);
+			res.send(result);
+		}
+		catch(err)
+		{
+			console.log(err);
+		}
 	}
 );
 
