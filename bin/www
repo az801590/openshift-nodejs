@@ -2,7 +2,7 @@ const app=require("../app");
 const http=require("http");
 
 const port=8080;
-const ip="0.0.0.0";
+const ip="127.0.0.1";
 
 app.set("port", port);
 
