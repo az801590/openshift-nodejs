@@ -1,4 +1,3 @@
-console.log("a");
 var recognize;
 var recognizing=false;
 var ltrans="";
